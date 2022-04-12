@@ -12,9 +12,10 @@ timestamp = datestr(now,formatOut)
 % 12 minute recording (720 secs)
 recordblocking(recObj, 720);
 disp('End of Recording.');
-disp('Writing .wav file');
 
 % Write audio data to a .wav file
+disp('Writing .wav file');
+
 myRecording = getaudiodata(recObj);
 audiowrite('2CH_recording.wav',myRecording,1);
 
