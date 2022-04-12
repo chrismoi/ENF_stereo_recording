@@ -10,7 +10,7 @@ formatOut = 'yyyy/mm/dd HH:MM:SS.FFF';
 timestamp = datestr(now,formatOut)
 
 % 12 minute recording (720 secs)
-recordblocking(recObj, 5);
+recordblocking(recObj, 720);
 disp('End of Recording.');
 disp('Writing .wav file');
 
