@@ -11,6 +11,7 @@ timestamp = datestr(now,formatOut)
 
 % 12 minute recording (720 secs)
 recordblocking(recObj, 720);
+
 disp('End of Recording.');
 
 % Write audio data to a .wav file
